@@ -238,7 +238,7 @@ public class CipherStorageKeystoreRsaEcb extends CipherStorageBase {
       .setEncryptionPaddings(PADDING_PKCS1)
       .setRandomizedEncryptionRequired(true)
       .setUserAuthenticationRequired(true)
-      .setUserAuthenticationValidityDurationSeconds(5)
+      .setUserAuthenticationParameters(5, KeyProperties.AUTH_BIOMETRIC_STRONG)
       .setKeySize(keySize);
   }
 
